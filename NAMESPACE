@@ -1,3 +1,6 @@
+export(PackageSummary, PackageSum2, sortRSiteSearch,
+       unionRSiteSearch, intersectRSiteSearch, hits)
+
 importFrom( brew, brew )
 export(RSiteSearch.function,
        HTML)
@@ -5,3 +8,5 @@ export(RSiteSearch.function,
 S3method(HTML, RSiteSearch)
 S3method(summary, RSiteSearch)
 S3method(print, summary.RSiteSearch)
+S3method(Ops, RSiteSearch )
+

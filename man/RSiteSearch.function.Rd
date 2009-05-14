@@ -67,10 +67,16 @@ RSiteSearch.function(string, maxPages = 10, sort.=NULL,
     \itemize{
       \item{Count}{Total number of hits downloaded in this package}
       \item{MaxScore}{
-	maximum of the hits downloaded in this \code{Package}
+	maximum of the \code{Score} over all help pages selected within
+	each \code{Package}.  See \code{Score} below or the Namazu
+	website (link below) for more information on how the score is
+	determined.
       }
       \item{TotalScore}{
-	Sum of Score over all hits downloaded in this \code{Package}
+	sum of the \code{Score} over all help pages selected within
+	each \code{Package}.  See \code{Score} below or the Namazu
+	website (link below) for more information on how the score is
+	determined.
       }
       \item{Package}{
 	Name of the package containing a help page meeting the search
@@ -81,7 +87,10 @@ RSiteSearch.function(string, maxPages = 10, sort.=NULL,
 	criterion.
       }
       \item{Date}{Date of the help page}
-      \item{Score}{Score returned by RSiteSearch}
+      \item{Score}{
+	Score returned by \code{RSiteSearch}, discussed in the Namazu
+	website (link below).
+      }
       \item{Description}{Title of the help page}
       \item{Link}{Universal Resource Locator (URL) for the help page}
     }
@@ -94,10 +103,9 @@ RSiteSearch.function(string, maxPages = 10, sort.=NULL,
 	an integer = total number of hits found by the search
       }
       \item{PackageSummary}{
-	a matrix with one row for each Package identified in the search
-	and columns for \code{Count}, \code{MaxScore}, \code{TotalScore},
-	with \code{rownames} = the names of the Packages, sorted as in the
-	\code{sort} argument.
+	a data.frame with one row for each package and columns
+	\code{Package}, \code{Count}, \code{MaxScore}, \code{TotalScore},
+	and \code{Date}, sorted as in the \code{sort.} argument.
       }
       \item{string}{
 	the \code{string} argument in the \code{call}.
@@ -118,6 +126,10 @@ RSiteSearch.function(string, maxPages = 10, sort.=NULL,
   \url{http://www.r-project.org/search.html} for a list of alternative R
   search capabilities, each of which may be best for different types of
   inquiries.
+}
+\references{
+  \url{http://www.namazu.org/doc/tips.html.en#weight} - reference on
+  determining \code{Score}
 }
 \examples{
   z <- RSiteSearch.function("spline", maxPages = 2)
