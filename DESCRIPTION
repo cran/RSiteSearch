@@ -1,13 +1,13 @@
 Package: RSiteSearch
 Title: RSiteSearch
-Version: 1.0-3
+Version: 1.0-4
 Author: Spencer Graves, Sundar Dorai-Raj, and Romain Francois
 Maintainer: Spencer Graves <spencer.graves@prodsyse.com>
 Description: Alternative interfaces to RSiteSearch
 License: GPL
-Imports: brew
+Depends: brew
 Repository: CRAN
 Repository/R-Forge/Project: rsitesearch
-Repository/R-Forge/Revision: 57
-Date/Publication: 2009-05-15 11:25:52
-Packaged: 2009-05-14 03:04:14 UTC; rforge
+Repository/R-Forge/Revision: 70
+Date/Publication: 2009-06-29 18:31:35
+Packaged: 2009-06-28 20:29:11 UTC; rforge

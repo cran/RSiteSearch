@@ -1,5 +1,6 @@
 \name{summary.RSiteSearch}
 \alias{summary.RSiteSearch}
+\alias{print.summary.RSiteSearch}
 \title{Summary Method for RSiteSearch}
 \description{Summary Method for RSiteSearch}
 \usage{
@@ -46,6 +47,9 @@
   \item{call}{
     the matched call to \code{RSiteSearch.function}.
   }
+}
+\author{
+  Spencer Graves
 }
 \seealso{
   \code{\link{RSiteSearch.function}},
